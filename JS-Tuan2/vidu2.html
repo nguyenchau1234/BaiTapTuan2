@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDU2</title>
+</head>
+    
+<body>
+    <p>Today
+        <input type="number" name="" id="nhap">
+        <button onclick="myFunction()">Display</button>
+        <p id="demo"></p>
+      
+      <script>
+      function myFunction() {
+    
+        const score = parseInt(document.getElementById("nhap").value);
+      
+        grade(score);
+      }
+      
+      function grade(score) {
+        let string_grade;
+      
+        switch (score) {
+          case 1:
+            string_grade = "Thứ 2";
+            break;
+          case 2:
+            string_grade = "Thứ 3";
+            break;
+          case 3:
+            string_grade = "Thứ 4";
+            break;
+          case 4:
+            string_grade = "Thứ 5";
+            break;
+          case 5:
+            string_grade = "Thứ 6";
+            break;
+          case 6:
+            string_grade = "Thứ 7";
+            break;
+          case 7:
+            string_grade = "Chủ Nhật";
+            break;
+          default:
+            string_grade = "Không có trong thời khóa biểu";
+        }
+      
+        document.getElementById("demo").innerHTML = string_grade;
+      }
+      </script>
+</body>
+</html>
